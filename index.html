@@ -39,17 +39,35 @@
     <meta name="theme-color" content="#ffffff">
 
 <body>
+<div id="vue-app">
 
-<header id="header">
-
+<header id="header" class="container-fluid">
+  <div class="row">
+    <div class="col-md">La Pampalluga</div>
+    <div class="col-md"><input id="search" name="search" type="search" placeholder="cerca"/></div>
+  </div>
 </header>
 
 <main id="shop">
-
+  <div class="container-fluid">
+    <article v-for="article in articles" class="display-sm-6">
+      <a href="{{article.url}}">
+  <h3>{{article.nom}}</h3>
+  <figure>
+    <img src="" alt="{{article.desc}}"
+  </figure>
+  <div>
+    <span aria-aria-label="price">{{article.preu}} €</span>
+  </div>
+      </a>
+</article>
+  </div>
 </main>
 
 <footer>
 </footer>
+
+</div>
 
 </body>
 
