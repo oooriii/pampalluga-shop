@@ -3,3 +3,10 @@ body{
   color: #000;
   background-color: #ece9df;
 }
+#search{
+  border: 0;
+  border-bottom: 2px solid black;
+}
+.img-thumbnail{
+  border: 0;
+}
