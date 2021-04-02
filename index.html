@@ -50,6 +50,7 @@
 
 <main id="shop">
   <div class="container-fluid">
+    <section class="row">
     <article v-for="article in articles" class="col-sm-4">
       <a v-bind:href="article.url" target="_blank">
         <h3>{{article.nom}}</h3>
@@ -60,7 +61,8 @@
           <span aria-aria-label="price">{{article.preu}} €</span>
         </div>
       </a>
-</article>
+    </article>
+    </section>
   </div>
 </main>
 
