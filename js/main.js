@@ -26,6 +26,7 @@ mounted () {
 },
 });
 
+/*
 var vm = new Vue({
  el: '#vue-header',
  data: {
@@ -46,3 +47,4 @@ var vm = new Vue({
  },
 
 });
+*/

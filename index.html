@@ -51,10 +51,10 @@
 <main id="shop">
   <div class="container-fluid">
     <article v-for="article in articles" class="col-sm-4">
-      <a v-bind:href="{{article.url}}" target="_blank">
+      <a v-bind:href="article.url" target="_blank">
         <h3>{{article.nom}}</h3>
         <div>
-          <img class="img-thumbnail" v-bind:src="{{article.img}}" v-bind:alt="{{article.desc}}" />
+          <img class="img-thumbnail" v-bind:src="article.img" v-bind:alt="article.desc" />
         </div>
         <div>
           <span aria-aria-label="price">{{article.preu}} €</span>
